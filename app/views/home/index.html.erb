@@ -1,2 +1,4 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+<h2>APPL: Price = <%= @price %> [USD]</h2>
+<h2>Gold: Price = <%= @bitcoin_json["Gold"]["ask"] %></h2>
+<h2>APPL: Price = <%= "%.2f" %  (@price.to_f/@bitcoin_json["Gold"]["ask"].to_f).to_s %> [oz Gold]</h2>

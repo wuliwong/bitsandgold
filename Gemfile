@@ -22,6 +22,7 @@ end
 
 gem 'jquery-rails'
 
+gem 'httparty'
 gem 'market_beat'
 
 # To use ActiveModel has_secure_password
