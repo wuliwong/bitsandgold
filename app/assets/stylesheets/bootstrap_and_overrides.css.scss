@@ -5,7 +5,19 @@ body, html {
 }
 
 body {
-    background-color: #000;
-    background-image: url(subtle_stripes/subtle_stripes_@2X.png);
+    background-color: #fffeee;
+    background-image: url(grey_wash_wall/grey_wash_wall_@2X.png);
     background-repeat: repeat;
+}
+
+.container {
+  margin-top: 20px;
+  padding: 10px;
+  background: #fff;
+  @include border-radius(5px);
+  @include box-shadow(2px 1px 1px #777);
+}
+
+.center-text {
+  text-align: center;
 }

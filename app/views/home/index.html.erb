@@ -1,5 +1,5 @@
 <input />  <a id="lookup" href="#" class="btn">Look up prices</a>
-
+<br />
 <h2><%= @symbol %>: Price = <%= "%.2f" % (@price.to_f/@gold_price.to_f).to_s %> [Gold]</h2>
 <h2><%= @symbol %>: Price = <%= "%.2f" % (@price.to_f/@silver_price.to_f).to_s %> [Silver]</h2>
 <h2><%= @symbol %>: Price = <%= "%.2f" % (@price.to_f/@btc_price.to_f).to_s %> [btc]</h2>
