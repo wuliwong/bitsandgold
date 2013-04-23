@@ -13,7 +13,7 @@ body {
 .container {
   margin-top: 20px;
   padding: 10px;
-  background: #fff;
+  background: #f6f6f6;
   @include border-radius(5px);
   @include box-shadow(2px 1px 1px #777);
 }
