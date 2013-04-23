@@ -6,7 +6,7 @@ class HomeController < ApplicationController
   base_uri "api.bitcoincharts.com"
 
   def index
-    if params[:symbol].empty?
+    if params[:symbol].nil? || params[:symbol].empty?
       @symbol = "AAPL"
     else
       @symbol = params[:symbol]
