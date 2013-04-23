@@ -3,7 +3,8 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
 $(document).ready () ->
-  $("#lookup").click( () -> 
+  $("#lookup").click( (e) ->
+    e.preventDefault()
     symbol = $("input").val().toUpperCase()
     document.location.href = "/?symbol="+symbol
   )

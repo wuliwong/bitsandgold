@@ -1,4 +1,4 @@
-<input /><button id="lookup">Look up prices</button>
+<input />  <a id="lookup" href="#" class="btn">Look up prices</a>
 
 <h2><%= @symbol %>: Price = <%= "%.2f" % (@price.to_f/@gold_price.to_f).to_s %> [Gold]</h2>
 <h2><%= @symbol %>: Price = <%= "%.2f" % (@price.to_f/@silver_price.to_f).to_s %> [Silver]</h2>
