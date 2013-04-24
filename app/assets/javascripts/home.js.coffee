@@ -8,3 +8,8 @@ $(document).ready () ->
     symbol = $("input").val().toUpperCase()
     document.location.href = "/?symbol="+symbol
   )
+  $("#lookup-year").click( (e) ->
+    e.preventDefault()
+    symbol = $("input").val().toUpperCase()
+    document.location.href = "/historical/?symbol="+symbol
+  )
