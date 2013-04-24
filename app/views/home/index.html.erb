@@ -1,13 +1,13 @@
 <input />  <a id="lookup" href="#" class="btn">Look up prices</a>
 <br />
-<h2><%= @symbol %>: Price = <%= "%.2f" % (@price.to_f/@gold_price.to_f).to_s %> [oz. Gold]</h2>
-<h2><%= @symbol %>: Price = <%= "%.2f" % (@price.to_f/@silver_price.to_f).to_s %> [oz. Silver]</h2>
-<h2><%= @symbol %>: Price = <%= "%.2f" % (@price.to_f/@btc_price.to_f).to_s %> [BTC]</h2>
-<h2><%= @symbol %>: Price = <%= @price %> [USD]</h2>
+<h2><%= @symbol %>: <%= "%.2f" % (@price.to_f/@gold_price.to_f).to_s %> [oz. Gold]</h2>
+<h2><%= @symbol %>: <%= "%.2f" % (@price.to_f/@silver_price.to_f).to_s %> [oz. Silver]</h2>
+<h2><%= @symbol %>: <%= "%.2f" % (@price.to_f/@btc_price.to_f).to_s %> [BTC]</h2>
+<h2><%= @symbol %>: <%= @price %> [USD]</h2>
 
 <hr />
 
 <h3>Current Non-fiat money valuations in USD</h3>
-<h4>Gold: Price = <%= "%.2f" % @gold_price %> [USD/oz]</h4>
-<h4>Silver: Price = <%= "%.2f" % @silver_price %> [USD/oz]</h4>
-<h4>Bitcoin: Price = <%= "%.2f" % @btc_price %> [USD/btc]</h4>
+<h4>Gold: <%= "%.2f" % @gold_price %> [USD/oz]</h4>
+<h4>Silver: <%= "%.2f" % @silver_price %> [USD/oz]</h4>
+<h4>Bitcoin: <%= "%.2f" % @btc_price %> [USD/btc]</h4>

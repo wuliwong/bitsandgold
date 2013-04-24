@@ -30,6 +30,8 @@ gem 'bootstrap-sass', '~> 2.3.1.0'
 gem 'jquery-rails'
 
 gem 'httparty'
+gem 'nokogiri'
+
 gem 'market_beat'
 
 # To use ActiveModel has_secure_password
