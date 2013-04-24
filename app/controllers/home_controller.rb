@@ -13,7 +13,7 @@ class HomeController < ApplicationController
     else
       @symbol = params[:symbol]
     end
-    @price = MarketBeat.opening_price @symbol.to_sym
+    @price = MarketBeat.last_trade_real_time @symbol.to_sym
     #@metal_result = HomeController.get "http://appsrv.cse.cuhk.edu.hk/~rysun/goldprice/"
     #@metal_json = JSON.parse @metal_result.parsed_response
     @bitcoin_result = HomeController.get "http://data.mtgox.com/api/1/BTCUSD/ticker"
