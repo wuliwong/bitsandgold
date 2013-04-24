@@ -4,6 +4,8 @@
 <h2><%= @symbol %>: <%= "%.2f" % (@price.to_f/@silver_price.to_f).to_s %> [oz. Silver]</h2>
 <h2><%= @symbol %>: <%= "%.2f" % (@price.to_f/@btc_price.to_f).to_s %> [BTC]</h2>
 <h2><%= @symbol %>: <%= @price %> [USD]</h2>
+<br />
+<a href="/historical?symbol=<%= @symbol %>"><%= @symbol %> 1 Year Historical Chart</a>
 
 <hr />
 

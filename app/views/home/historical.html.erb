@@ -1,0 +1,29 @@
+<h5 class="center-text">1 Year Historical Chart for <%= @symbol %> Priced in Ounces of Gold</h5>
+<div id="placeholder" style="width:600px;height:300px;margin-left: auto; margin-right: auto;"></div>
+<h6 class="center-text">Month</h4>
+<br />
+<a class="center-text" href="/?symbol=<%= @symbol %>">Back to <%= @symbol %> Current Prices</a>
+
+<script type="text/javascript">
+  var price_array = <%= @gold_price_array %>;
+  var gold_price_data = <%= @symbol_gold_data %>;
+  var xticks = [];
+  var xtick_index = <%= @xtick_index %>;
+  //var xtick_date = <%= @xtick_date %>;
+  console.log("asdfasdfasdf");
+
+  $(function () {
+    var d1 = [];
+    for (var i = 0; i < 14; i += 0.5)
+        d1.push([i, Math.sin(i)]);
+
+    var d2 = [[0, 3], [4, 8], [8, 5], [9, 13]];
+
+    // a null signifies separate line segments
+    var d3 = [[0, 12], [7, 12], null, [7, 2.5], [12, 2.5]];
+    
+    $.plot($("#placeholder"), [ {label: "<%= @symbol %>/oz. Gold", data: gold_price_data} ],{xaxis: {
+            ticks: <%= @xticks %>
+        }});
+});
+</script>

@@ -33,6 +33,7 @@ gem 'httparty'
 gem 'nokogiri'
 
 gem 'market_beat'
+gem 'yahoofinance'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
