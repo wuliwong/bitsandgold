@@ -10,6 +10,19 @@ body {
     background-repeat: repeat;
 }
 
+.logo {
+  width: 319px;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: url(logo_150px.png);
+}
+
+.headline {
+  color: #f6f6f6;
+  font-weight: normal;
+}
+
 .container {
   margin-top: 20px;
   padding: 10px;
