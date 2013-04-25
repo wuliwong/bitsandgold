@@ -15,7 +15,7 @@ body {
   height: 150px;
   margin-right: auto;
   margin-left: auto;
-  background-image: url(logo_150px.png);
+  background-image: url(logo2_150px.png);
 }
 
 .headline {
@@ -36,19 +36,19 @@ body {
 }
 
 .btn-btc-orange {
-  background-color: hsl(32, 92%, 48%) !important;
+  background-color: hsl(32, 92%, 57%) !important;
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f8b262", endColorstr="#eb8109");
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#f8b262), to(#eb8109));
-  background-image: -moz-linear-gradient(top, #f8b262, #eb8109);
-  background-image: -ms-linear-gradient(top, #f8b262, #eb8109);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f8b262), color-stop(100%, #eb8109));
-  background-image: -webkit-linear-gradient(top, #f8b262, #eb8109);
-  background-image: -o-linear-gradient(top, #f8b262, #eb8109);
-  background-image: linear-gradient(#f8b262, #eb8109);
-  border-color: #eb8109 #eb8109 hsl(32, 92%, 43%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f69c36", endColorstr="#f6982c");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#f69c36), to(#f6982c));
+  background-image: -moz-linear-gradient(top, #f69c36, #f6982c);
+  background-image: -ms-linear-gradient(top, #f69c36, #f6982c);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f69c36), color-stop(100%, #f6982c));
+  background-image: -webkit-linear-gradient(top, #f69c36, #f6982c);
+  background-image: -o-linear-gradient(top, #f69c36, #f6982c);
+  background-image: linear-gradient(#f69c36, #f6982c);
+  border-color: #f6982c #f6982c hsl(32, 92%, 56.5%);
   color: #f6f6f6 !important;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.03);
   -webkit-font-smoothing: antialiased;
 }
 
