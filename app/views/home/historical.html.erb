@@ -4,7 +4,8 @@
 <br />
 <h5 class="center-text">1 Year Historical Chart for <%= @symbol %> Priced in Bitcoins</h5>
 <div id="symbol-btc-1yr" style="width:600px;height:300px;margin-left: auto; margin-right: auto;"></div>
-<h6 class="center-text">Month *note: Bitcoin price is the closing price for each given month.</h4>
+<h6 class="center-text">Month </h6>
+<h6 class="center-text">* The "step" features in the chart are due to a single monthly price used for the Bitcoin value.</h6>
 <div class="year-chart-input">
   <input />  <a id="lookup-year" href="#" class="btn btn-btc-orange">Enter New Symbol</a>
 </div>
@@ -33,7 +34,7 @@
     $.plot($("#symbol-gold-1yr"), [ {label: "<%= @symbol %>/oz. Gold", data: symbol_gold_data} ],{xaxis: {
             ticks: <%= @xticks %>
     }});
-    $.plot($("#symbol-btc-1yr"), [ {label: "<%= @symbol %>/Monthly Bitcoin Close", data: symbol_btc_data} ],{xaxis: {
+    $.plot($("#symbol-btc-1yr"), [ {label: "*<%= @symbol %>/Monthly Bitcoin Close", data: symbol_btc_data} ],{xaxis: {
             ticks: <%= @xticks %>
     }});
 });
