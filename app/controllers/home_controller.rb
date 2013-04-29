@@ -81,38 +81,10 @@ class HomeController < ApplicationController
       @gold_price_data << [index, p]
     end
 
-    gold_btc_array = []
+    btc_price_array = []
     btc_prices[btc_prices.length-11..btc_prices.length].each do |b|
       btc_price_array << ("%.2f" % b[1].to_f).to_f
     end
-
-    #Get bitcoin prices for last year
-    last_year = (Date.today - 365).to_time.to_i
-    btcdoc = Nokogiri::HTML(open("http://bitcoincharts.com/t/trades.csv?symbol=mtgoxUSD&start=#{last_year}"))
-    btccsv=CSV.parse btcdoc.text
-    btc_price_array = []
-    month_index = 0
-    btc_month = month_array[0]
-    prev_btc_month = month_array[0]
-    btccsv.each do |b|
-      btc_index = btccsv.index(b)
-      btc_month = Time.at(b[0].to_i).month.to_s
-      
-      if btc_month.length == 1
-        btc_month = "0" + btc_month
-      end
-
-      if btc_month == !month_array[month_index]
-        if prev_btc_month == month_array
-          #store the last price from the month in the btc_price_array
-          btc_price_array << btccsv[btc_index - 1][1]
-          month_index += 1
-        end
-      end
-      prev_btc_month = btc_month
-    end
-    #for the current month use the last price
-    btc_price_array << btccsv.last[1]
 
     symbol_data = YahooFinance::get_historical_quotes_days(@symbol,365).reverse
     symbol_gold_price_array = []
