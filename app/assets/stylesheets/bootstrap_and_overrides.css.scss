@@ -1,8 +1,5 @@
 @import "bootstrap";
 
-body, html {
-    width: 100%;
-}
 
 body {
     background-color: #fffeee;
@@ -27,7 +24,7 @@ body {
   font-weight: normal;
 }
 
-.container {
+.main-container {
   margin-top: 20px;
   padding: 10px;
   background: #f6f6f6;
