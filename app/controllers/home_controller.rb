@@ -94,6 +94,9 @@ class HomeController < ApplicationController
       month = d[0].split("-")[1]
       year = d[0].split("-")[0]
       index = month_array.index(month)
+      if index.nil?
+        debugger
+      end
       if symbol_index > 0 && month != symbol_data[symbol_index-1][0].split("-")[1]
         @xticks << [symbol_index, month.to_i]
         @xtick_index << symbol_index
