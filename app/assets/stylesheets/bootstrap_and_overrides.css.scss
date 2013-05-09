@@ -1,5 +1,7 @@
-$navbarBackground: #767676;
-$navbarBackgroundHighlight: #575757;
+$navbarBackground: #413839;
+$navbarBackgroundHighlight: #413839;
+$btn_nav_opacity: 0.3;
+$btn_nav_hover_opacity: 0.7;
 
 @import "bootstrap";
 
@@ -14,8 +16,43 @@ body {
 .navbar-logo {
   height: 40px;
   padding: 0;
-  margin-top: -10px;
+  margin-top: -5px;
   margin-bottom: -10px;
+}
+
+.btn-nav:hover {
+  background-color: rgba(246,152,44,1) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="rgba(246,156,54,$btn_nav_hover_opacity)", endColorstr="rgba(246,152,44,$btn_nav_hover_opacity)");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(rgba(246,156,54,$btn_nav_hover_opacity)), to(rgba(246,152,44,$btn_nav_hover_opacity)));
+  background-image: -moz-linear-gradient(top, rgba(246,156,54,$btn_nav_hover_opacity), rgba(246,152,44,$btn_nav_hover_opacity));
+  background-image: -ms-linear-gradient(top, rgba(246,156,54,$btn_nav_hover_opacity), rgba(246,152,44,$btn_nav_hover_opacity));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(246,156,54,$btn_nav_hover_opacity)), color-stop(100%, rgba(246,152,44,$btn_nav_hover_opacity)));
+  background-image: -webkit-linear-gradient(top, rgba(246,156,54,$btn_nav_opacity), rgba(246,152,44,$btn_nav_opacity));
+  background-image: -o-linear-gradient(top, rgba(246,156,54,$btn_nav_hover_opacity), rgba(246,152,44,$btn_nav_hover_opacity));
+  background-image: linear-gradient(rgba(246,156,54,$btn_nav_hover_opacity), rgba(246,152,44,$btn_nav_hover_opacity));
+  border-color: rgba(246,152,44,1) rgba(246,152,44,$btn_nav_hover_opacity) rgba(246,151,42,$btn_nav_hover_opacity);
+  color: red;
+}
+
+.btn-nav {
+  @extend .btn;
+  background-color: rgba(246,152,44,$btn_nav_opacity) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="rgba(246,156,54,$btn_nav_opacity)", endColorstr="rgba(246,152,44,$btn_nav_opacity)");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(rgba(246,156,54,$btn_nav_opacity)), to(rgba(246,152,44,$btn_nav_opacity)));
+  background-image: -moz-linear-gradient(top, rgba(246,156,54,$btn_nav_opacity), rgba(246,152,44,$btn_nav_opacity));
+  background-image: -ms-linear-gradient(top, rgba(246,156,54,$btn_nav_opacity), rgba(246,152,44,$btn_nav_opacity));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(246,156,54,$btn_nav_opacity)), color-stop(100%, rgba(246,152,44,$btn_nav_opacity)));
+  background-image: -webkit-linear-gradient(top, rgba(246,156,54,$btn_nav_opacity), rgba(246,152,44,$btn_nav_opacity));
+  background-image: -o-linear-gradient(top, rgba(246,156,54,1), rgba(246,152,44,1));
+  background-image: linear-gradient(rgba(246,156,54,$btn_nav_opacity), rgba(246,152,44,$btn_nav_opacity));
+  border-color: rgba(246,152,44,1) rgba(246,152,44,$btn_nav_opacity) rgba(246,151,42,$btn_nav_opacity);
+  color: white !important;
+  font-weight: bold;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.03);
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 5px;
 }
 
 .white {
@@ -48,17 +85,17 @@ body {
 }
 
 .btn-btc-orange {
-  background-color: hsl(32, 92%, 57%) !important;
+  background-color: rgba(246,152,44,1) !important;
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f69c36", endColorstr="#f6982c");
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#f69c36), to(#f6982c));
-  background-image: -moz-linear-gradient(top, #f69c36, #f6982c);
-  background-image: -ms-linear-gradient(top, #f69c36, #f6982c);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f69c36), color-stop(100%, #f6982c));
-  background-image: -webkit-linear-gradient(top, #f69c36, #f6982c);
-  background-image: -o-linear-gradient(top, #f69c36, #f6982c);
-  background-image: linear-gradient(#f69c36, #f6982c);
-  border-color: #f6982c #f6982c hsl(32, 92%, 56.5%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="rgba(246,156,54)", endColorstr="rgba(246,152,44,1)");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(rgba(246,156,54,1)), to(rgba(246,152,44,1)));
+  background-image: -moz-linear-gradient(top, rgba(246,156,54,1), rgba(246,152,44,1));
+  background-image: -ms-linear-gradient(top, rgba(246,156,54,1), rgba(246,152,44,1));
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(246,156,54,1)), color-stop(100%, rgba(246,152,44,1)));
+  background-image: -webkit-linear-gradient(top, rgba(246,156,54,1), rgba(246,152,44,1));
+  background-image: -o-linear-gradient(top, rgba(246,156,54,1), rgba(246,152,44,1));
+  background-image: linear-gradient(rgba(246,156,54,1), rgba(246,152,44,1));
+  border-color: rgba(246,152,44,1) rgba(246,152,44,1) hsl(32, 92%, 56.5%);
   color: #f6f6f6 !important;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.03);
   -webkit-font-smoothing: antialiased;
