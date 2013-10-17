@@ -25,7 +25,7 @@ class HomeController < ApplicationController
     @gold_price = @coinbul_json["Gold"]["USD"]
     @silver_price = @coinbul_json["Silver"]["USD"]
     @btc_price = @coinbul_json["BTC"]["USD"]
-    
+
     ######## LITERALLY THE ENTIRE home_controller#historical METHOD COPY AND PASTED #####################
 
     #this particular file contains monthly gold prices back to 12/31/1978
@@ -77,7 +77,7 @@ class HomeController < ApplicationController
     end
 
     btc_price_array = []
-    btc_prices[btc_prices.length-11..btc_prices.length].each do |b|
+    btc_prices[btc_prices.length-12..btc_prices.length].each do |b|
       btc_price_array << ("%.2f" % b[1].to_f).to_f
     end
 

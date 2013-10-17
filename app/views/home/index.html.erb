@@ -32,7 +32,6 @@
   var xticks = [];
   var xtick_index = <%= @xtick_index %>;
   //var xtick_date = <%= @xtick_date %>;
-  console.log("asdfasdfasdf");
 
   $(function () {
     var d1 = [];
@@ -43,7 +42,7 @@
 
     // a null signifies separate line segments
     var d3 = [[0, 12], [7, 12], null, [7, 2.5], [12, 2.5]];
-    
+
     $.plot($("#symbol-gold-1yr"), [ {label: "<%= @symbol %>/oz. Gold", data: symbol_gold_data} ],{xaxis: {
             ticks: <%= @xticks %>
     }});
