@@ -5,3 +5,6 @@ I made this open source b/c my friend suggested it. The site is up and running a
 The site is to be a tool for finance (and maybe news and maybe more???) for people who prefer to price things in non-fiat currencies like gold, silver and bitcoins.
 
 Fork away, pls.
+
+Gold historical data can be found: http://www.kitco.com/charts/historicalgold.html
+Silver historical data can be found: http://www.kitco.com/charts/historicalsilver.html
