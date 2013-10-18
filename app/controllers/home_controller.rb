@@ -127,7 +127,7 @@ class HomeController < ApplicationController
     month_array = []
     year_array = []
     #We will start with just a 1 year historic chart
-    @gold_prices[(@gold_prices.length-11)..@gold_prices.length].each do |gp|
+    @gold_prices[(@gold_prices.length-12)..@gold_prices.length].each do |gp|
       month_hash = {}
       month_hash['month'] = gp[0].split("/")[0]
       if month_hash['month'].length == 1
